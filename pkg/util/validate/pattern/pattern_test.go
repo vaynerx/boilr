@@ -3,7 +3,7 @@ package pattern_test
 import (
 	"testing"
 
-	"github.com/tmrts/boilr/pkg/util/validate/pattern"
+	"github.com/vaynerx/boilr/pkg/util/validate/pattern"
 )
 
 func TestUnixPathPattern(t *testing.T) {
@@ -99,10 +99,10 @@ func TestURLPattern(t *testing.T) {
 		{" ", false},
 		{"/", false},
 		{"http://", false},
-		{"http://github.com/tmrts/boilr", true},
-		{"https://github.com/tmrts/boilr", true},
-		{"github.com/tmrts/boilr", true},
-		{"rawcontent.github.com/tmrts/boilr", true},
+		{"http://github.com/vaynerx/boilr", true},
+		{"https://github.com/vaynerx/boilr", true},
+		{"github.com/vaynerx/boilr", true},
+		{"rawcontent.github.com/vaynerx/boilr", true},
 		{"github.com:80/tmrts/boilr", true},
 	}
 
