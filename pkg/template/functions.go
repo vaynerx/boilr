@@ -40,6 +40,12 @@ var (
 			return fmt.Sprintf("%b", n)
 		},
 
+		"toEnv": func(s string) string {
+			upper := strings.ToUpper(s)
+			replaced := strings.Replace(s, "-", "_")
+			return replaced
+		}
+
 		"formatFilesize": func(value interface{}) string {
 			var size float64
 
