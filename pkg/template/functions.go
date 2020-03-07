@@ -42,7 +42,7 @@ var (
 
 		"toEnv": func(s string) string {
 			upper := strings.ToUpper(s)
-			replaced := strings.Replace(s, "-", "_")
+			replaced := strings.ReplaceAll(upper, "-", "_")
 			return replaced
 		},
 
