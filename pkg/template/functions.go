@@ -44,7 +44,7 @@ var (
 			upper := strings.ToUpper(s)
 			replaced := strings.Replace(s, "-", "_")
 			return replaced
-		}
+		},
 
 		"formatFilesize": func(value interface{}) string {
 			var size float64
